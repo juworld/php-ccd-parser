@@ -80,8 +80,6 @@ class CCDParser
 
             $i++;
         }
-
-        return true;
     }
 
     private function parseDemographics($xmlDemo)
@@ -119,15 +117,6 @@ class CCDParser
         $this->provider['organization']['addr']['state'] = (string)$xmlDemo->providerOrganization->addr->state;
         $this->provider['organization']['addr']['postalCode'] = (string)$xmlDemo->providerOrganization->addr->postalCode;
         $this->provider['organization']['addr']['country'] = (string)$xmlDemo->providerOrganization->addr->country;
-    }
-
-    private function get_attr($xml, $attr)
-    {
-        if (is_object($xml)) {
-            return (string)$xml->attributes()->{$attr};
-        } else {
-            return '';
-        }
     }
 
     private function parsePrescriptions($xmlMed)
