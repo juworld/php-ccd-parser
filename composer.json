@@ -1,0 +1,19 @@
+{
+  "name": "michalisantoniou6/php-ccd-parser",
+  "description": "A CCD parser written in PHP.",
+  "authors": [
+    {
+      "name": "Michalis Antoniou",
+      "email": "michalisantoniou6@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "michalisantoniou6\\PhpCCDParser\\": "src"
+    }
+  },
+  "minimum-stability": "stable"
+}
